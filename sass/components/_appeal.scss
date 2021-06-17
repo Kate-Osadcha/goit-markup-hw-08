@@ -1,0 +1,50 @@
+.appeal__tittle {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-white-color);
+  margin-bottom: 20px;
+}
+.appeal__list {
+  display: flex;
+}
+
+.appeal__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.appeal__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color var(--duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: var(--accent-color);
+  }
+}
+
+.appeal__social-icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--main-white-color);
+}

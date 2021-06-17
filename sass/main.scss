@@ -1,0 +1,32 @@
+//UTILS
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+//BASE
+@import "./base/base";
+@import "./base/section";
+@import "./base/container";
+
+//COMPONENTS
+@import "./components/soc-networks";
+@import "./components/title";
+@import "./components/backdrop";
+@import "./components/modal-window";
+@import "./components/modal-form";
+@import "./components/logo";
+@import "./components/menu";
+@import "./components/appeal";
+@import "./components/overlay";
+@import "./components/button";
+
+//LAYOUT
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/advantage";
+@import "./layout/doing";
+@import "./layout/team";
+@import "./layout/customers";
+@import "./layout/footer";
+
+//PAGES
+@import "./pages/portfolio";

@@ -5,11 +5,23 @@
 
 .modal-form__head {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-form__head {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__head {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .modal-form__field {
@@ -83,36 +95,48 @@
 
 .modal-form__checkbox-policy {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--main-grey-color);
   margin-top: 10px;
-  
+
   &::before {
-  display: inline-block;
-  vertical-align: middle;
-  content: "";
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-  border: 2px solid rgba(33, 33, 33, 1);
-  border-radius: 2px;
-  box-sizing: border-box;
-  
-  .modal-form__checkbox:checked + & {
-  border: none;
-  background-image: url("../images/icon-check.svg");
-  background-position: 50% 50%;
-  border-radius: 2px solid var(--accent-color);
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border: 2px solid rgba(33, 33, 33, 1);
+    border-radius: 2px;
+    box-sizing: border-box;
+
+    .modal-form__checkbox:checked + & {
+      border: none;
+      background-image: url("../images/icon-check.svg");
+      background-position: 50% 50%;
+      border-radius: 2px solid var(--accent-color);
+    }
   }
-}
 
   &::before,
   & {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-evenly;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-form__checkbox-policy {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox-policy {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
@@ -137,10 +161,9 @@
   letter-spacing: 0.06em;
   cursor: pointer;
   transition: background-color var(--duration) var(--timing-function);
-  
+
   &:hover,
   &:focus {
-  background-color: #188ce8;
+    background-color: #188ce8;
   }
 }
-

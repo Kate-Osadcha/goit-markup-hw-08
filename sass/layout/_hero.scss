@@ -1,22 +1,25 @@
 .hero {
   text-align: center;
+
+  &__title {
+    font-weight: 900;
+    margin-bottom: 30px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-white-color);
+  }
 }
-.hero__title {
-  font-weight: 900;
-  margin-bottom: 30px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--main-white-color);
-}
+
 @media screen and (max-width: 1199px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
-  }
-  .hero__title {
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
+
+    &__title {
+      font-size: 26px;
+      line-height: 1.62;
+      text-align: center;
+    }
   }
 }
 
@@ -24,9 +27,10 @@
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-  }
-  .hero__title {
-    font-size: 44px;
-    line-height: 1.36;
+
+    &__title {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 }

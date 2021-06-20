@@ -48,3 +48,20 @@
   align-items: center;
   fill: var(--main-white-color);
 }
+
+@media screen and (max-width: 1199px) {
+  .appeal__tittle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .appeal__list {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .appeal {
+    margin-left: 70px;
+  }
+}

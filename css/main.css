@@ -525,6 +525,22 @@ html {
   fill: var(--main-white-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .appeal__tittle {
+    display: flex;
+    justify-content: center;
+  }
+  .appeal__list {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .appeal {
+    margin-left: 70px;
+  }
+}
+
 .overlay {
   min-height: 400px;
   margin-left: auto;
@@ -1153,12 +1169,7 @@ html {
 }
 
 .footer__item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.footer__container {
-  display: flex;
-  flex-wrap: nowrap;
+  margin-bottom: 8px;
 }
 
 .footer__logo {
@@ -1166,14 +1177,8 @@ html {
 }
 
 .footer__address {
-  width: 231px;
-  height: 81px;
   margin-top: 20px;
-  margin-right: 70px;
-}
-
-.footer__footer-form {
-  margin-left: 93px;
+  margin-bottom: 60px;
 }
 
 .footer__form-head {
@@ -1186,13 +1191,8 @@ html {
   margin-bottom: 20px;
 }
 
-.footer__form-position {
-  display: inline-flex;
-  align-items: center;
-}
-
 .footer__form-input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -1200,7 +1200,7 @@ html {
   border-radius: 4px;
   padding: 15px 16px;
   background-color: #2f303a;
-  margin-right: 12px;
+  margin-bottom: 20px;
 }
 
 .footer__form-input::placeholder {
@@ -1251,14 +1251,76 @@ html {
   color: var(--main-white-color);
 }
 
+@media screen and (max-width: 767px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__tablet-position {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__address {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__form-head {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__form-position {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__form-input {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .footer__tablet-position {
+    display: flex;
+  }
+  .footer__form-input {
+    width: 358px;
+  }
+}
+
 .portfolio__filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
 }
 
 .portfolio__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.portfolio__button {
+  height: 38px;
 }
 
 .portfolio__button {
@@ -1289,16 +1351,7 @@ html {
   color: var(--main-white-color);
 }
 
-.portfolio__portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
-}
-
 .portfolio__portfolio-item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin-right: 30px;
   margin-bottom: 30px;
   background: var(--main-white-color);
   border: 1px solid #eeeeee;
@@ -1314,11 +1367,7 @@ html {
 .potfolio__portfolio-img-wrapper {
   position: relative;
   overflow: hidden;
-}
-
-.potfolio__portfolio-image {
-  width: 370px;
-  height: 294px;
+  max-height: 400px;
 }
 
 .portfolio__overlay-portfolio {
@@ -1361,5 +1410,42 @@ html {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-grey-color);
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__filter {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .portfolio__portfolio-content {
+    padding-bottom: 56px;
+  }
+  .portfolio__portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+  .portfolio__portfolio-item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__filter {
+    margin-bottom: 50px;
+  }
+  .portfolio__portfolio-item {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-right: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -4,28 +4,18 @@
   background: #2f303a;
 
   &__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
-}
-
-.footer__container {
-  display: flex;
-  flex-wrap: nowrap;
 }
 
 .footer__logo {
   color: var(--main-white-color);
 }
 .footer__address {
-  width: 231px;
-  height: 81px;
   margin-top: 20px;
-  margin-right: 70px;
+  margin-bottom: 60px;
 }
 
-.footer__footer-form {
-  margin-left: 93px;
-}
 .footer__form-head {
   font-weight: 700;
   font-size: 14px;
@@ -36,13 +26,8 @@
   margin-bottom: 20px;
 }
 
-.footer__form-position {
-  display: inline-flex;
-  align-items: center;
-}
-
 .footer__form-input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -50,7 +35,7 @@
   border-radius: 4px;
   padding: 15px 16px;
   background-color: #2f303a;
-  margin-right: 12px;
+  margin-bottom: 20px;
 
   &::placeholder {
     font-weight: 400;
@@ -101,3 +86,61 @@
   color: var(--main-white-color);
 }
 
+@media screen and (max-width: 767px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__tablet-position {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__address {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__form-head {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__form-position {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__form-input {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .footer__tablet-position {
+    display: flex;
+  }
+  .footer__form-input {
+    width: 358px;
+  }
+}

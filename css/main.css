@@ -140,13 +140,13 @@ html {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-black-color);
-  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 1199px) {
   .title {
     font-size: 28px;
     line-height: 1.18;
+    margin-bottom: 30px;
   }
 }
 
@@ -154,6 +154,7 @@ html {
   .title {
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 
@@ -553,31 +554,31 @@ html {
 
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .overlay {
-    background-image: url("../images/hero/bg-mobile@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-mobile@2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .overlay {
-    background-image: url("../images/hero/bg-tablet.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-tablet.jpg");
   }
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .overlay {
-    background-image: url("../images/hero/bg-tablet@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-tablet@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .overlay {
-    background-image: url("../images/hero/bg-desktop.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-desktop.jpg");
   }
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
   .overlay {
-    background-image: url("../images/hero/bg-desktop@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-desktop@2x.jpg");
   }
 }
 
@@ -608,10 +609,9 @@ html {
     width: 100vw;
     height: 100vh;
     background: #ffffff;
-    padding-top: 48px;
-    padding-bottom: 48px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     overflow: auto;
+    z-index: 1;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -623,7 +623,7 @@ html {
     padding-right: 25px;
     padding-bottom: 48px;
   }
-  .mobile-menu_close-btn {
+  .mobile-menu__close-btn {
     border: none;
     border-color: transparent;
     padding: 0;
@@ -636,7 +636,7 @@ html {
     background-color: transparent;
     padding: 0;
   }
-  .mobile-menu_close-btn-icon {
+  .mobile-menu__close-btn-icon {
     margin-top: 10px;
     margin-right: 15px;
   }
@@ -645,14 +645,14 @@ html {
     visibility: visible;
     pointer-events: auto;
   }
-  .mobile-menu_nav {
+  .mobile-menu__nav {
     padding-left: 25px;
     margin-bottom: 302px;
   }
-  .mobile-menu_item:not(:last-child) {
+  .mobile-menu__item:not(:last-child) {
     margin-bottom: 32px;
   }
-  .mobile-menu_link {
+  .mobile-menu__link {
     font-family: Roboto;
     font-weight: 500;
     font-size: 40px;
@@ -662,41 +662,30 @@ html {
     color: #212121;
     transition: color var(--duration) var(--timing-function);
   }
-  .mobile-menu_link:hover, .mobile-menu_link:focus {
+  .mobile-menu__link:hover, .mobile-menu__link:focus {
     color: var(--accent-color);
   }
-  .mobile-menu_link.current::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-  }
-  .mobile-menu .current {
-    color: var(--accent-color);
-  }
-  .mobile-menu_contact {
+  .mobile-menu__contact {
     margin-bottom: 64px;
     margin-left: 40px;
   }
-  .mobile-menu_contact-item {
+  .mobile-menu__contact-item {
     margin-bottom: 32px;
   }
-  .mobile-menu_soc-networks {
+  .mobile-menu__soc-networks {
     display: flex;
     justify-content: center;
   }
-  .mobile-menu_soc-networks-link {
+  .mobile-menu__soc-networks-link {
     font-family: Roboto;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196f3;
+  }
+  .current {
+    color: var(--accent-color);
   }
   .liner::after {
     content: "";
@@ -789,8 +778,6 @@ html {
   }
   .header__contact-link {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.4;
     letter-spacing: 0.02em;
     color: var(--main-grey-color);
     transition: color var(--duration) var(--timing-function);
@@ -814,14 +801,21 @@ html {
     margin-top: 10px;
   }
   .envelope {
-    width: 16px;
-    height: 12px;
+    width: 14px;
+    height: 10px;
     fill: currentColor;
   }
   .smartphone {
     width: 10px;
-    height: 16px;
+    height: 14px;
     fill: currentColor;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1199px) {
+  .header__contact-link {
+    font-size: 12px;
+    line-height: 1.7;
   }
 }
 
@@ -842,6 +836,16 @@ html {
     display: flex;
     justify-content: center;
     align-items: baseline;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .envelope {
+    width: 16px;
+    height: 12px;
+  }
+  .smartphone {
+    width: 10px;
+    height: 16px;
   }
   .indent {
     margin-top: 0;
@@ -1174,11 +1178,7 @@ html {
 
 .footer__logo {
   color: var(--main-white-color);
-}
-
-.footer__address {
-  margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .footer__form-head {
@@ -1192,7 +1192,7 @@ html {
 }
 
 .footer__form-input {
-  width: 450px;
+  max-width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -1251,6 +1251,12 @@ html {
   color: var(--main-white-color);
 }
 
+@media screen and (min-width: 480px) {
+  .footer__form-input {
+    width: 450px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .footer__container {
     display: flex;
@@ -1264,6 +1270,7 @@ html {
   .footer__tablet-position {
     display: flex;
     justify-content: space-evenly;
+    align-items: baseline;
   }
 }
 
@@ -1275,6 +1282,7 @@ html {
   .footer__address {
     display: flex;
     justify-content: center;
+    margin-bottom: 60px;
   }
   .footer__contact-list {
     display: flex;
@@ -1426,9 +1434,6 @@ html {
   .portfolio__filter {
     justify-content: center;
     margin-bottom: 30px;
-  }
-  .portfolio__portfolio-content {
-    padding-bottom: 56px;
   }
   .portfolio__portfolio-list {
     display: flex;

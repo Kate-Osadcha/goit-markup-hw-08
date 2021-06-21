@@ -1178,7 +1178,10 @@ html {
 
 .footer__logo {
   color: var(--main-white-color);
-  margin-bottom: 20px;
+}
+
+.footer__address {
+  margin-top: 20px;
 }
 
 .footer__form-head {

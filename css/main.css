@@ -650,6 +650,9 @@ html {
     flex-direction: column;
     justify-content: space-between;
   }
+  .mobile-menu__position-nav {
+    display: flex;
+  }
   .mobile-menu__nav {
     display: flex;
     flex-direction: column;
@@ -670,6 +673,10 @@ html {
   }
   .mobile-menu__link:hover, .mobile-menu__link:focus {
     color: var(--accent-color);
+  }
+  .mobile-menu__position-contact {
+    display: flex;
+    flex-direction: column;
   }
   .mobile-menu__contact {
     display: flex;

@@ -52,6 +52,10 @@
       justify-content: space-between;
     }
 
+    &__position-nav {
+      display: flex;
+    }
+
     &__nav {
       display: flex;
       flex-direction: column;
@@ -76,6 +80,11 @@
       &:focus {
         color: var(--accent-color);
       }
+    }
+
+    &__position-contact {
+      display: flex;
+      flex-direction: column;
     }
 
     &__contact {

@@ -53,6 +53,8 @@
     }
 
     &__nav {
+      display: flex;
+      flex-direction: column;
       padding-left: 25px;
     }
 
@@ -77,6 +79,8 @@
     }
 
     &__contact {
+      display: flex;
+      flex-direction: column;
       margin-bottom: 64px;
       margin-left: 25px;
     }

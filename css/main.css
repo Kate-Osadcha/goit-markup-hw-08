@@ -654,8 +654,6 @@ html {
     display: flex;
   }
   .mobile-menu__nav {
-    display: flex;
-    flex-direction: column;
     padding-left: 25px;
   }
   .mobile-menu__item:not(:last-child) {
@@ -679,8 +677,6 @@ html {
     flex-direction: column;
   }
   .mobile-menu__contact {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 64px;
     margin-left: 25px;
   }

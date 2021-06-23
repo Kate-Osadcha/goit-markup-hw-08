@@ -46,11 +46,8 @@
       pointer-events: auto;
     }
 
-    
-
     &__nav {
       padding-left: 25px;
-      // margin-bottom: 302px;
     }
 
     &__item:not(:last-child) {
@@ -99,10 +96,11 @@
   }
 
   .position {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .current {
     color: var(--accent-color);
   }

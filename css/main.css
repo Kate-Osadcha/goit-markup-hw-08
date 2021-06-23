@@ -647,7 +647,6 @@ html {
   }
   .mobile-menu__nav {
     padding-left: 25px;
-    margin-bottom: 302px;
   }
   .mobile-menu__item:not(:last-child) {
     margin-bottom: 32px;
@@ -674,6 +673,7 @@ html {
   }
   .mobile-menu__soc-networks {
     display: flex;
+    flex-wrap: wrap;
     margin-left: 25px;
   }
   .mobile-menu__soc-networks-link {
@@ -683,6 +683,11 @@ html {
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196f3;
+  }
+  .position {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .current {
     color: var(--accent-color);

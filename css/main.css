@@ -672,8 +672,6 @@ html {
     margin-bottom: 32px;
   }
   .mobile-menu__soc-networks {
-    display: flex;
-    flex-wrap: wrap;
     margin-left: 25px;
   }
   .mobile-menu__soc-networks-link {

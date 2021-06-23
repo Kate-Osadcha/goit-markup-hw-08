@@ -46,16 +46,6 @@
       pointer-events: auto;
     }
 
-    &__position {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    &__position-nav {
-      display: flex;
-    }
-
     &__nav {
       padding-left: 25px;
     }
@@ -78,11 +68,6 @@
       &:focus {
         color: var(--accent-color);
       }
-    }
-
-    &__position-contact {
-      display: flex;
-      flex-direction: column;
     }
 
     &__contact {
@@ -108,6 +93,12 @@
       letter-spacing: 0.02em;
       color: #2196f3;
     }
+  }
+
+  .position {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .current {

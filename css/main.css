@@ -645,6 +645,11 @@ html {
     visibility: visible;
     pointer-events: auto;
   }
+  .mobile-menu__position {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .mobile-menu__nav {
     padding-left: 25px;
   }
@@ -683,11 +688,6 @@ html {
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196f3;
-  }
-  .position {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
   .current {
     color: var(--accent-color);

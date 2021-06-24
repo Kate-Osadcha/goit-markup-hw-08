@@ -73,7 +73,6 @@
     }
 
     &__contact {
-      // margin-top: auto;
       margin-bottom: 64px;
       padding-left: 25px;
     }
@@ -97,6 +96,7 @@
   .position {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 
   .item-mobile {

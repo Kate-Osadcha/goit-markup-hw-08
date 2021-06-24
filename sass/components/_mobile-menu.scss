@@ -49,10 +49,10 @@
     &__position {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
     }
 
     &__nav {
-      flex-grow: 1;
       padding-left: 25px;
     }
 

@@ -650,12 +650,8 @@ html {
     visibility: visible;
     pointer-events: auto;
   }
-  .mobile-menu__position {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
   .mobile-menu__nav {
+    flex-grow: 1;
     padding-left: 25px;
   }
   .mobile-menu__item:not(:last-child) {
@@ -678,9 +674,6 @@ html {
     margin-bottom: 64px;
     padding-left: 25px;
   }
-  .mobile-menu__contact-item {
-    margin-bottom: 32px;
-  }
   .mobile-menu__soc-networks {
     display: flex;
     flex-wrap: wrap;
@@ -693,6 +686,13 @@ html {
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196f3;
+  }
+  .position {
+    display: flex;
+    flex-direction: column;
+  }
+  .item-mobile {
+    margin-bottom: 32px;
   }
   .current {
     color: var(--accent-color);

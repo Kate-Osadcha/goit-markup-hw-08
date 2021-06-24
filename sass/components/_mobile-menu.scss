@@ -46,14 +46,10 @@
       pointer-events: auto;
     }
 
-    &__position {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
     &__nav {
+      flex-grow: 1;
       padding-left: 25px;
+      // margin-bottom: 300px;
     }
 
     &__item:not(:last-child) {
@@ -77,12 +73,9 @@
     }
 
     &__contact {
+      // margin-top: auto;
       margin-bottom: 64px;
       padding-left: 25px;
-    }
-
-    &__contact-item {
-      margin-bottom: 32px;
     }
 
     &__soc-networks {
@@ -99,6 +92,15 @@
       letter-spacing: 0.02em;
       color: #2196f3;
     }
+  }
+
+  .position {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-mobile {
+    margin-bottom: 32px;
   }
 
   .current {

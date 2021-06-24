@@ -59,6 +59,10 @@ body {
   overflow-x: hidden;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -167,6 +171,7 @@ html {
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
   transition: opacity var(--duration) var(--timing-function), visibility var(--duration) var(--timing-function);
+  overflow-y: scroll;
 }
 
 .is-hidden {
@@ -645,7 +650,12 @@ html {
     visibility: visible;
     pointer-events: auto;
   }
+  .mobile-menu__position {
+    display: flex;
+    flex-direction: column;
+  }
   .mobile-menu__nav {
+    flex-grow: 1;
     padding-left: 25px;
   }
   .mobile-menu__item:not(:last-child) {
@@ -673,6 +683,7 @@ html {
   }
   .mobile-menu__soc-networks {
     display: flex;
+    flex-wrap: wrap;
     margin-left: 25px;
   }
   .mobile-menu__soc-networks-link {
@@ -682,11 +693,6 @@ html {
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196f3;
-  }
-  .position {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
   .current {
     color: var(--accent-color);

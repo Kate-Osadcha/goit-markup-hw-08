@@ -49,7 +49,7 @@
     &__nav {
       flex-grow: 1;
       padding-left: 25px;
-      // margin-bottom: 300px;
+      margin-bottom: 100px;
     }
 
     &__item:not(:last-child) {
@@ -93,11 +93,11 @@
     }
   }
 
-  .position {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+  // .position {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  // }
 
   .item-mobile {
     margin-bottom: 32px;
